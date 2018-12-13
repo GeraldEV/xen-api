@@ -152,4 +152,4 @@ let minimum_token_timeout_coefficient_s = 0.65
     https://docs.citrix.com/content/dam/docs/en-us/xenserver/current-release/downloads/xenserver-config-limits.pdf
     Using (2TiB - 4GiB), instead of the (2TB - 4GB) limit defined in the above
     document, does not work, we cannot create a VDI of that size. *)
-let max_vhd_size = Sizes.((2L ** tb) -* (4L ** gb))
+let max_vhd_size = Sizes.(2040L ** gib)
